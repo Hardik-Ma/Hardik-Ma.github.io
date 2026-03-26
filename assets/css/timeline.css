@@ -1,0 +1,251 @@
+/* Timeline container styling */
+.timeline-container {
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The vertical line */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  background-color: var(--link-col);
+  top: 0;
+  bottom: 0;
+  left: 50px;
+  margin-left: -2px;
+  border-radius: 2px;
+}
+
+/* Container for timeline items */
+.timeline-item {
+  padding: 10px 40px;
+  position: relative;
+  margin: 2rem 0 3rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* The timeline dot */
+.timeline-dot {
+  position: absolute;
+  left: 50px;
+  width: 20px;
+  height: 20px;
+  background-color: var(--link-col);
+  border-radius: 50%;
+  margin-left: -10px;
+  z-index: 1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-item:hover .timeline-dot {
+  transform: scale(1.5);
+  box-shadow: 0 0 0 4px rgba(var(--link-col-rgb), 0.2);
+}
+
+/* Timeline date */
+.timeline-date {
+  position: relative;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--link-col);
+  margin-bottom: 0.75rem;
+  margin-left: 65px;
+}
+
+/* Timeline content container */
+.timeline-content {
+  padding: 20px 25px;
+  background: var(--card-background);
+  position: relative;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-left: 65px;
+}
+
+.timeline-content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content h3 {
+  margin-top: 0;
+  color: var(--text-col);
+  font-size: 1.5rem;
+}
+
+.timeline-content h4 {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  color: var(--text-col);
+  opacity: 0.85;
+}
+
+.timeline-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 1.5rem;
+}
+
+.skill-tag {
+  background-color: rgba(var(--link-col-rgb), 0.15);
+  color: var(--link-col);
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  display: inline-block;
+  transition: background-color 0.2s ease;
+}
+
+.skill-tag:hover {
+  background-color: rgba(var(--link-col-rgb), 0.25);
+}
+
+/* Responsibility Categories */
+.responsibility-categories {
+  margin-top: 1.5rem;
+}
+
+.responsibility-category {
+  margin-bottom: 0.75rem;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,0.08);
+  background-color: rgba(255,255,255,0.05);
+}
+
+.category-toggle {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 12px 16px;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s;
+  background-color: rgba(var(--link-col-rgb), 0.08);
+  color: var(--text-col);
+  outline: none; 
+}
+
+.category-toggle:hover {
+  background-color: rgba(var(--link-col-rgb), 0.15);
+}
+
+.category-toggle:focus {
+  box-shadow: 0 0 0 2px rgba(var(--link-col-rgb), 0.2); /* Subtle highlight instead of outline */
+}
+
+/* Explicitly remove all borders and outlines when active/focused */
+.category-toggle:focus,
+.category-toggle:active,
+.responsibility-category.active .category-toggle {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  -webkit-appearance: none !important;
+  appearance: none !important;
+}
+
+/* Style for the active category to replace the default focus style */
+.responsibility-category.active .category-toggle {
+  background-color: rgba(var(--link-col-rgb), 0.2); /* Slightly darker background instead */
+}
+
+.category-icon {
+  margin-right: 12px;
+  font-size: 1.25rem;
+}
+
+.category-title {
+  margin-top: 1rem;
+  flex-grow: 1;
+  font-size: 1rem;
+}
+
+.toggle-icon {
+  font-size: 2rem;
+  transition: transform 0.3s;
+}
+
+.category-content {
+  margin-left: 10px;
+  max-height: 0;
+  overflow: visible;
+  transition: max-height 0.3s ease;
+}
+
+.category-content ul {
+  padding: 16px;
+  margin: 0;
+}
+
+.category-content li {
+  margin-left: 10px;
+  margin-bottom: 16px;
+}
+
+.category-content li:last-child {
+  margin-bottom: 0;
+}
+
+.responsibility-category.active .category-content {
+  max-height: 1000px; /* Adjust as needed */
+}
+
+.responsibility-category.active .toggle-icon {
+  transform: rotate(45deg);
+}
+
+[data-theme="dark"] .timeline-content {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+}
+
+[data-theme="dark"] .timeline-content:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .responsibility-category {
+  border-color: rgba(255,255,255,0.1);
+}
+
+[data-theme="dark"] .category-toggle {
+  background-color: rgba(var(--link-col-rgb), 0.15);
+}
+
+[data-theme="dark"] .category-toggle:hover {
+  background-color: rgba(var(--link-col-rgb), 0.25);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .timeline::after {
+    left: 30px;
+  }
+  
+  .timeline-dot {
+    left: 30px;
+  }
+  
+  .timeline-date,
+  .timeline-content {
+    margin-left: 45px;
+  }
+  
+  .timeline-item {
+    padding-left: 20px;
+  }
+}

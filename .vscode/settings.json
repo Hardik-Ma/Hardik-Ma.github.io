@@ -1,0 +1,19 @@
+{
+    "files.associations": {
+        "*.html": "jekyll",
+        "*.md": "jekyll",
+        "*.yml": "yaml",
+        "*.css": "css"
+    },
+    "css.validate": false,
+    "scss.validate": false,
+    "emmet.includeLanguages": {
+        "jekyll": "html",
+        "liquid": "html"
+    },
+    "liquid.format.enable": true,
+    "liquid.completion.enable": true,
+    "[css]": {
+        "editor.validate": false
+    }
+}

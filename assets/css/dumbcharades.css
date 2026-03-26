@@ -1,0 +1,85 @@
+.game-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.filters {
+    background-color: var(--card-background);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.year-filter, .genre-filter, .difficulty-filter {
+    margin-bottom: 1rem;
+}
+
+.genre-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.movie-display {
+    text-align: center;
+    margin: 2rem 0;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--card-background);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.game-controls {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.game-button {
+    padding: 12px 24px;
+    border-radius: 30px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: var(--link-col);
+    color: white;
+}
+
+.game-button.secondary {
+    background-color: var(--card-background);
+    color: var(--text-col);
+    border: 2px solid var(--link-col);
+}
+
+.game-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.timer-display {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.timer-button.active {
+    background-color: #dc3545;
+}
+
+/* Dark mode adjustments */
+[data-theme="dark"] .filters,
+[data-theme="dark"] .movie-display {
+    background-color: rgba(255,255,255,0.05);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}

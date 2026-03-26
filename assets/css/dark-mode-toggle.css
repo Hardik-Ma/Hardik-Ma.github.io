@@ -1,0 +1,33 @@
+/* Dark mode toggle styles */
+.dark-mode-toggle {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  margin-left: 10px;
+  margin-top: 0.55rem; /* Match navbar padding */
+  margin-bottom: 0.9375rem;
+  position: relative;
+}
+
+.sun-icon, .moon-icon {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  transition: opacity 0.3s, transform 0.3s;
+  fill: currentColor;
+}
+
+/* Initial states */
+.sun-icon {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.moon-icon {
+  opacity: 0;
+  transform: scale(0.8);
+}
+

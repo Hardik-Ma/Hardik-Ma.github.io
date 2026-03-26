@@ -1,0 +1,119 @@
+- name: Spoons
+  price: €3.00
+  description: Modern stainless steel spoon with a sleek design. Dishwasher safe.
+  image: /assets/img/products/spoons.jpg
+  pickup: "Wedel, 22880"
+
+- name: Chapati Platform Aluminium
+  price: €2.00
+  description: Useful for making chapatis light weight.
+  image: /assets/img/products/chapati platform.jpg
+  pickup: "Wedel, 22880"
+
+- name: Cooker and its accessories
+  price: €10.00
+  description: Spare cooker ring, whistle and safety valve available with the utensils
+  image: /assets/img/products/cooker.jpg
+  pickup: "Wedel, 22880"
+
+- name: Dal laddle
+  price: €1.00
+  description: Useful for serving lentils and other dishes.
+  image: /assets/img/products/dal_laddle.jpg
+  pickup: "Wedel, 22880"
+
+- name: Grater 
+  price: €3.00
+  description: Useful for grating vegetables and cheese. Good as new.
+  image: /assets/img/products/grater.jpg
+  pickup: "Wedel, 22880"
+
+- name: Idli Cooker + multiaccesories
+  price: €10.00
+  description: Useful for making idlis and other steamed dishes.
+  image: /assets/img/products/idli pot.jpg
+  pickup: "Wedel, 22880"
+
+- name: Single induction cooktop (rommelbacher)
+  price: €20.00
+  description: Useful for Cooking and can use as a spare cooktop.
+  image: /assets/img/products/induction.jpg
+  pickup: "Harburg, 21077"
+
+- name: Iron
+  price: €2.00
+  description: Useful for ironing clothes.
+  image: /assets/img/products/iron.jpg
+  pickup: "Wedel, 22880"
+
+- name: Meat Knife
+  price: €3.00
+  description: Useful for cutting meat.
+  image: /assets/img/products/meat_knife.jpg
+  pickup: "Wedel, 22880"
+
+- name: Phillips Mixer
+  price: €30.00
+  description: Useful for mixing and blending ingredients.
+  image: /assets/img/products/phillips_mixer.jpg
+  pickup: "Wedel, 22880"
+
+- name: Mortar and Pestle
+  price: €3.00
+  description: Useful for grinding and blending ingredients.
+  image: /assets/img/products/mortar_and_pestle.jpg
+  pickup: "Wedel, 22880"
+
+- name: Small Nonstick Pan
+  price: €3.00
+  description: Useful for Tea and cooking a variety of dishes.
+  image: /assets/img/products/small_nonstick_pan.jpg
+  pickup: "Wedel, 22880"
+
+- name: Phase 10 Game
+  price: €15.00
+  description: A fun card game for family and friends.
+  image: /assets/img/products/phase_10_game.jpg
+  pickup: "Wedel, 22880"
+
+- name: Sewing Stuff
+  price: €5.00
+  description: A collection of sewing supplies and tools.
+  image: /assets/img/products/sewing_stuff.jpg
+  pickup: "Wedel, 22880"
+
+- name: Steel Plate and Glass
+  price: €5.00
+  description: A collection of steel plates and glasses.
+  image: /assets/img/products/steel_plate_and_glass.jpg
+  pickup: "Wedel, 22880"
+
+- name: Steel Bowl
+  price: €3.00
+  description: A Steel bowl for kneading dough and mixing ingredients.
+  image: /assets/img/products/steel_bowl.jpg
+  pickup: "Wedel, 22880"
+
+- name: Steel plates
+  price: €2.00
+  description: A Steel plate for covering pots.
+  image: /assets/img/products/steel_plate.jpg
+  pickup: "Wedel, 22880"
+
+- name: Tea Strainer
+  price: €1.00
+  description: A tea strainer for tea preparation.
+  image: /assets/img/products/tea_strainer.jpg
+  pickup: "Wedel, 22880"
+
+- name: Tiffin
+  price: €5.00
+  description: A tiffin for carrying meals, air tight and insulated cover.
+  image: /assets/img/products/tiffin.jpg
+  pickup: "Wedel, 22880"
+
+- name: Strainer big
+  price: €2.00
+  description: A big strainer for rice and stuff.
+  image: /assets/img/products/strainer_big.jpg
+  pickup: "Wedel, 22880"

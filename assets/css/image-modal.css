@@ -1,0 +1,135 @@
+.image-modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.image-modal-container.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.image-modal {
+    background-color: white;
+    border-radius: 8px;
+    max-width: 90vw;
+    width: auto;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 30px rgba(0,0,0,0.3);
+    transform: scale(0.8);
+    opacity: 0;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.image-modal.active {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.image-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.image-modal-title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.image-modal-close {
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #0a9396;
+    transition: background-color 0.2s;
+}
+
+.image-modal-close:hover {
+    background-color: rgba(107, 107, 107, 0.158);
+}
+
+.image-modal-content {
+    padding: 15px;
+    overflow: auto;
+    text-align: center;
+}
+
+.modal-image {
+    max-width: 100%;
+    max-height: 70vh;
+    display: block;
+    margin: 0 auto;
+}
+
+.modal-caption {
+    margin-top: 10px;
+    font-style: italic;
+    color: #555;
+}
+
+/* Zoom hint indicator */
+.project-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.zoom-hint {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.project-image:hover .zoom-hint {
+    opacity: 1;
+}
+
+/* Dark mode */
+[data-theme="dark"] .image-modal {
+    background-color: #2d2d2d;
+    color: #f8f9fa;
+}
+
+[data-theme="dark"] .image-modal-header {
+    border-bottom-color: #444;
+}
+
+[data-theme="dark"] .image-modal-close:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+[data-theme="dark"] .modal-caption {
+    color: #ccc;
+}

@@ -1,0 +1,131 @@
+/* Skills Section Styling */
+.skills-section {
+  padding: 2rem 0;
+}
+
+.skills-container {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  padding: 2rem 0;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.skill-category-card {
+  background-color: var(--card-background);
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.category-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-top: 5px; 
+  margin-bottom: 18px;
+  color: var(--text-col);
+}
+
+.category-tagline {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--mid-col);
+  margin-top: 5px; 
+  margin-bottom: 18px;
+  line-height: 1.4;
+}
+
+.tool-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tool-item {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-col);
+  background-color: var(--card-background);
+  padding: 8px 12px;
+  border-radius: 10px;
+  transition: all 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.tool-icon {
+  width: 27px;
+  height: 27px;
+  filter: invert(0.5);
+}
+
+/* Dark mode adjustments */
+[data-theme="dark"] .skill-category-card {
+  background: var(--card-background);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .tool-item {
+  background-color:var(--card-background);
+}
+
+[data-theme="dark"] .tool-icon {
+  filter: invert(0.8);
+}
+
+/* Resume button styling */
+.skills-resume-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.skills-resume-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--link-col);
+  color: white !important;
+  padding: 20px 24px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.skills-resume-button:hover {
+  background-color: var(--hover-col);
+  transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .skills-container {
+    padding: 20px 15px;
+  }
+  
+  .skill-category-card {
+    padding: 20px;
+  }
+}

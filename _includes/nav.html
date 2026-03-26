@@ -1,0 +1,76 @@
+<nav class="navbar navbar-expand-xl navbar-light fixed-top navbar-custom {% if page.nav-short %}top-nav-short-permanent{% else %}top-nav-regular{% endif %}">
+
+  {%- if site.title-img -%}
+    <a class="navbar-brand navbar-brand-logo" href="{{ '/' | absolute_url }}"><img alt="{{ site.title }} Logo" src="{{ site.title-img | relative_url}}"/></a>
+  {%- elsif site.title -%}
+    <a class="navbar-brand" href="{{ '/' | absolute_url }}">{{ site.title }}</a>
+  {%- endif -%}
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="main-navbar">
+    <ul class="navbar-nav ml-auto">
+      {%- for link in site.navbar-links -%}
+        {%- if link[1].first %}
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ link[0] }}</a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+              {%- for childlink in link[1] -%}
+                {%- for linkparts in childlink %}
+                  <a class="dropdown-item" href="{{ linkparts[1] | relative_url }}">{{ linkparts[0] }}</a>
+                {%- endfor -%}
+              {%- endfor %}
+            </div>
+          </li>
+        {% else %}
+          <li class="nav-item">
+            <a class="nav-link" href="{{ link[1] | relative_url }}">{{ link[0] }}</a>
+          </li>
+        {%- endif -%}
+      {%- endfor -%}
+        <li class="nav-item">
+          <a class="nav-link menu-resume-button" href="#" onclick="openResumeModal(); return false;">
+              View Resume
+          </a>  
+        </li>
+      {% if site.post_search %}
+        <li class="nav-item">
+          <a class="nav-link" id="nav-search-link" href="#" title="Search">
+            <span id="nav-search-icon" class="fa fa-search"></span>
+            <span id="nav-search-text">Search</span>
+          </a>
+        </li>
+      {%- endif -%}
+    </ul>
+        <!-- Dark mode toggle button in navbar -->
+    <span class="dark-mode-toggle" id="darkModeToggleBtn">
+      <svg class="sun-icon" viewBox="0 0 24 24" width="24" height="24">
+        <path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58c-.39-.39-1.03-.39-1.41 0-.39.39-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37c-.39-.39-1.03-.39-1.41 0-.39.39-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0 .39-.39.39-1.03 0-1.41l-1.06-1.06zm1.06-10.96c.39-.39.39-1.03 0-1.41-.39-.39-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06zM7.05 18.36c.39-.39.39-1.03 0-1.41-.39-.39-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06z"/>
+      </svg>
+      <svg class="moon-icon" viewBox="0 0 24 24" width="24" height="24">
+        <path d="M21.75 15.5a8.25 8.25 0 01-10.25-10.25a8.25 8.25 0 1010.25 10.25z"/>
+      </svg>
+    </span>
+  </div>
+
+  {% if site.navbar-extra %}
+    {% for file in site.navbar-extra %}
+      {% include {{ file }} %}
+    {% endfor %}
+  {% endif %}
+
+  {% if site.avatar and page.show-avatar != false %}
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        <a href="{{ '/' | absolute_url }}">
+          <img alt="Navigation bar avatar" class="avatar-img" src="{{ site.avatar | relative_url }}" />
+        </a>
+      </div>
+    </div>
+  {% endif %}
+
+</nav>
+
+{% include search.html %}

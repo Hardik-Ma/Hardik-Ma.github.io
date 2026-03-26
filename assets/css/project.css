@@ -1,0 +1,511 @@
+/* --- Project Section --- */
+
+.project-img-wrapper {
+  position: relative;
+  display: block;
+  border-radius: 0.5rem;  /* match your overlay’s radius */
+  overflow: hidden;        /* clip the ::before to the curved corners */
+}
+
+.project-img-wrapper .img-fluid {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1; 
+  object-fit: cover;
+  height: auto;             /* Remove fixed height if present */
+  max-height: none;
+}
+
+.project-img-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(80, 80, 80, 0.5);
+  /* you can actually drop the border‐radius here now,
+     since the wrapper will clip it for you */
+  transition: opacity 0.3s;
+  opacity: 1;
+  pointer-events: none;
+}
+
+.project-img-wrapper:hover::before,
+.project-img-wrapper:focus::before {
+  opacity: 0;
+}
+
+/* Project tile title color */
+.projects-section .mt-2,
+.col-md-6 .mt-2 {
+  color:var(--text-col); /* Replace with your desired color or a CSS variable */
+  font-weight: bold;  
+  transition: color 0.2s;
+}
+
+.col-md-6 a,
+.col-md-6 a:hover,
+.col-md-6 a:focus {
+  text-decoration: none;
+}
+
+/* Optional: Change color on hover */
+.col-md-6 a:hover .mt-2 {
+  color:var(--hover-col); /* Or another accent color */
+}
+
+/* Project page specific styles */
+.project-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.project-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.project-hero-image {
+  margin: 2rem 0;
+}
+
+.project-section {
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(var(--link-col-rgb), 0.1);
+}
+
+.project-section:last-child {
+  border-bottom: none;
+}
+
+.project-image {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.image-caption {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+.role-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 1rem;
+}
+
+.role-item {
+  flex: 1;
+  min-width: 300px;
+  background-color: var(--card-background);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.tools-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 1rem;
+
+}
+
+.tools-col {
+  flex: 1;
+  min-width: 300px;
+  background-color: var(--card-background);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.tool-name {
+  font-weight: bold;
+  color: var(--link-col);
+}
+
+.process-step {
+  margin-bottom: 2rem;
+  padding-left: 2rem;
+  position: relative;
+}
+
+.process-step::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 3px;
+  background-color: rgba(var(--link-col-rgb), 0.3);
+  border-radius: 3px;
+}
+
+.process-step h3 {
+  color: var(--link-col);
+  position: relative;
+}
+
+.process-step h3::before {
+  content: '';
+  position: absolute;
+  left: -2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--link-col);
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-bottom: 2rem;
+}
+
+.result-item {
+  background-color: var(--card-background);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  padding: 1.5rem;
+  border-radius: 10px;
+  transition: transform 0.2s ease;
+}
+
+.result-item:hover {
+  transform: translateY(-5px);
+}
+
+.recognition-box {
+  background-color: var(--card-background);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+/* New styles for project image group */
+.project-image-group {
+  display: flex;
+  gap: 20px; /* Space between the two graphs */
+  justify-content: center; /* Center the graphs horizontally */
+  margin: 2rem 0; /* Add vertical spacing */
+}
+
+.project-image-group .project-image {
+  flex: 1; /* Make both graphs take equal width */
+  max-width: 45%; /* Limit the width of each graph */
+  text-align: center; /* Center the captions */
+}
+
+.project-image-group img {
+  width: 100%; /* Ensure the images are responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Methods container */
+.methods-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 1.5rem 0;
+}
+
+.method-item {
+  flex: 1;
+  min-width: 250px;
+  background-color: var(--card-background);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  padding: 1.25rem;
+  border-radius: 8px;
+  border-left: 4px solid rgba(var(--link-col-rgb), 0.5);
+}
+
+.method-item h4 {
+  color: var(--link-col);
+  margin-top: 0;
+}
+
+/* Highlights container */
+.highlights-container {
+  margin-top: 2rem;
+}
+
+.highlight-item {
+  display: flex;
+  margin-bottom: 1.5rem;
+  background-color: rgba(var(--link-col-rgb), 0.03);
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.highlight-icon {
+  font-size: 2.5rem;
+  margin-right: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.highlight-content h3 {
+  margin-top: 0;
+  color: var(--link-col);
+}
+
+/* Team members container */
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 1.5rem;
+}
+
+.team-member {
+  background-color: var(--card-background);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: 500;
+}
+
+/* Project overview section */
+.project-overview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 1.5rem;
+}
+
+.overview-item {
+  flex: 1;
+  min-width: 200px;
+  background-color: var(--card-background);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  padding: 1.25rem;
+  border-radius: 8px;
+}
+
+.overview-item h3 {
+  margin-top: 0;
+  color: var(--link-col);
+  font-size: 1.1rem;
+}
+
+.problem-statement {
+  font-size: 1.2rem;
+  font-style: italic;
+  padding: 1.5rem;
+  border-left: 4px solid rgba(var(--link-col-rgb), 0.5);
+  background-color: var(--card-background);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  margin: 1.5rem 0;
+}
+
+/* Algorithm container */
+.algorithms-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 1.5rem 0;
+}
+
+.algorithm-item {
+  background-color: var(--card-background);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  padding: 1.25rem;
+  border-radius: 8px;
+  border-left: 4px solid rgba(var(--link-col-rgb), 0.5);
+}
+
+.algorithm-item h4 {
+  color: var(--link-col);
+  margin-top: 0;
+}
+
+/* Final thoughts section */
+.final-thoughts {
+  background-color: var(--card-background);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  padding: 2rem;
+  border-radius: 10px;
+  margin: 1.5rem 0;
+  font-style: italic;
+}
+
+/* Objective box styles */
+.objective-box {
+  background-color: var(--card-background);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  padding: 1.5rem;
+  border-left: 5px solid rgba(var(--link-col-rgb), 0.5);
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  margin: 1.5rem 0;
+}
+
+/* Team sponsor styles */
+.team-sponsor {
+  background-color: var(--card-background);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+
+/* Takeaways section styling */
+.takeaways-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.takeaway-item {
+  background-color: var(--card-background);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid rgba(var(--link-col-rgb), 0.6);
+}
+
+.takeaway-item h3 {
+  color: var(--link-col);
+  margin-top: 0;
+}
+
+/* Minimal back to projects link */
+.back-to-projects-minimal {
+  margin: 3rem 0 1rem;
+  text-align: center;
+}
+
+.back-to-projects-minimal a {
+  color: var(--link-col);
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.back-to-projects-minimal a:hover {
+  transform: translateX(-3px);
+}
+
+/* Back to Projects button styling */
+.back-to-projects {
+  margin: 3rem 0 1rem;
+  text-align: center;
+}
+
+.back-to-projects .btn {
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--link-col);
+  color: white !important;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  outline: none; /* Removes the default outline */
+  box-shadow: 0 4px 10px rgba(var(--link-col-rgb), 0.2);
+}
+
+.back-to-projects .btn:focus {
+  outline: none; /* Ensures no blue outline on focus */
+  box-shadow: 0 0 0 3px rgba(var(--link-col-rgb), 0.5); /* Optional: Add a custom focus ring */
+}
+
+.back-to-projects .btn:hover {
+  background-color: var(--hover-col);
+  transform: translateY(-3px);
+  text-decoration: none;
+  box-shadow: 0 6px 15px rgba(var(--link-col-rgb), 0.25);
+}
+
+/* Dark mode adjustments */
+[data-theme="dark"] .back-to-projects .btn {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .back-to-projects .btn:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .role-container,
+  .tools-container {
+    flex-direction: column;
+  }
+  
+  .project-image img {
+    max-width: 100%;
+  }
+
+  .project-image-group {
+    flex-direction: column; /* Stack the graphs vertically */
+    gap: 10px; /* Reduce the gap between graphs */
+  }
+
+  .project-image-group .project-image {
+    max-width: 100%; /* Allow full width for each graph */
+  }
+}
+
+/* Dark mode adjustments */
+[data-theme="dark"] .result-item,
+[data-theme="dark"] .role-item {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+[data-theme="dark"] .process-step {
+  border-left-color: rgba(var(--link-col-rgb), 0.5);
+}
+
+[data-theme="dark"] .recognition-box {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+[data-theme="dark"] .method-item {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-left-color: rgba(var(--link-col-rgb), 0.6);
+}
+
+[data-theme="dark"] .highlight-item {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+[data-theme="dark"] .team-member {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] .overview-item,
+[data-theme="dark"] .problem-statement,
+[data-theme="dark"] .algorithm-item,
+[data-theme="dark"] .final-thoughts {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+[data-theme="dark"] .team-container .team-member:first-child {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] .objective-box {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-left-color: rgba(var(--link-col-rgb), 0.6);
+}
+
+[data-theme="dark"] .team-sponsor {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
