@@ -10,7 +10,7 @@ function initResumeModal() {
         modalContainer.className = 'resume-modal-container';
         
         // Add your resume file path here
-        const pdfPath = '/assets/pdf/Sagar_Wadke_Resume_En.pdf'; // Update this path
+        const pdfPath = '/assets/pdf/Hardik_Resume.pdf'; // Update this path
 
         modalContainer.innerHTML = `
             <div class="resume-modal">
