@@ -43,7 +43,7 @@ subtitle: Built with purpose. Driven by passion.
   <div class="col-md-6 mb-4">
     <a href="https://github.com/Hardik-Ma/Biogas-Purification" target="_blank">
       <div class="project-img-wrapper">
-        <img src="{{ '/assets/img/projects/Biogas_Membrane_cascade.png' | relative_url }}" alt="Biogas Purification" class="img-fluid rounded shadow-sm">
+        <img src="{{ '/assets/img/projects/Biogas_Membrane_cascade_2.jpg' | relative_url }}" alt="Biogas Purification" class="img-fluid rounded shadow-sm">
       </div>
       <h5 class="mt-2 text-dark">Adsorption & Membrane Cascade Modelling</h5>
       <p class="text-muted small">Modelling for Biogas Purification using Python.</p>
