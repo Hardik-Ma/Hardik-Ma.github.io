@@ -21,7 +21,7 @@ subtitle: Built with purpose. Driven by passion.
   </div>
 
   <div class="col-md-6 mb-4">
-    <a href="https://github.com/Hardik-Ma/Real-time-ReactorHydrodynamics-analyzer" target="_blank">
+    <a href="https://github.com/Hardik-Ma/Real-time-Reactor-Hydrodynamics-analyzer" target="_blank">
       <div class="project-img-wrapper">
         <img src="{{ '/assets/img/projects/project_2.jpg' | relative_url }}" alt="CFI Bioreactor" class="img-fluid rounded shadow-sm">
       </div>
