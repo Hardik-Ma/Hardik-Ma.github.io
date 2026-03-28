@@ -33,7 +33,7 @@ subtitle: Built with purpose. Driven by passion.
   <div class="col-md-6 mb-4">
     <a href="https://github.com/Hardik-Ma/H2_Gas_Membrane_Simulation" target="_blank">
       <div class="project-img-wrapper">
-        <img src="{{ '/assets/img/projects/project_3.jpg' | relative_url }}" alt="Gas Membrane Simulation" class="img-fluid rounded shadow-sm">
+        <img src="{{ '/assets/img/projects/H2_Purge_memb_opt.png' | relative_url }}" alt="Gas Membrane Simulation" class="img-fluid rounded shadow-sm">
       </div>
       <h5 class="mt-2 text-dark">Simulation of Gas Separation Membrane</h5>
       <p class="text-muted small">Hydrogen recovery from purge gas in e-methanol production.</p>
