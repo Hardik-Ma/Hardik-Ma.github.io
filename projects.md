@@ -70,4 +70,14 @@ subtitle: Built with purpose. Driven by passion.
     </a>
   </div>
 
+  <div class="col-md-6 mb-4">
+    <a href="{{ '/projects/green_methanol/' | relative_url }}">
+      <div class="project-img-wrapper">
+        <img src="{{ '/assets/img/projects/Green_Methanol_Process.jpg' | relative_url }}" alt="Green Methanol Production" class="img-fluid rounded shadow-sm">
+      </div>
+      <h5 class="mt-2 text-dark">Green Methanol Production</h5>
+      <p class="text-muted small">🏆 3rd Place — EURECHA Process Design Contest 2025.</p>
+    </a>
+  </div>
+
 </div>
