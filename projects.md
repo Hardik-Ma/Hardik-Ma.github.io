@@ -71,6 +71,16 @@ subtitle: Built with purpose. Driven by passion.
   </div>
 
   <div class="col-md-6 mb-4">
+    <a href="{{ '/projects/mg_nanocomposite_hydrogen/' | relative_url }}">
+      <div class="project-img-wrapper">
+        <img src="{{ '/assets/img/projects/IITB_overview.jpg' | relative_url }}" alt="Mg-Based Metal Hydride Kinetics" class="img-fluid rounded shadow-sm">
+      </div>
+      <h5 class="mt-2 text-dark">Reaction Kinetics of Mg-Based Metal Hydrides</h5>
+      <p class="text-muted small">Investigating hydrogenation rates for solid-state hydrogen storage at IIT Bombay.</p>
+    </a>
+  </div>
+
+  <div class="col-md-6 mb-4">
     <a href="#">
       <div class="project-img-wrapper">
         <img src="{{ '/assets/img/projects/project_5.jpg' | relative_url }}" alt="Biomethanol" class="img-fluid rounded shadow-sm">
