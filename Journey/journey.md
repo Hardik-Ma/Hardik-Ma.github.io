@@ -34,7 +34,7 @@ subtitle: The path that shaped my expertise and vision
       <div class="timeline-dot"></div>
       <div class="timeline-date">Mar 2024 - Aug 2024</div>
       <div class="timeline-content">
-        <h3><a href="{{ '/projects/predicting_high_pressure/' | relative_url }}" style="text-decoration: none;">Institute für Thermische Verfahrenstechnik</a></h3>
+        <h3><a href="{{ '/projects/predicting_high_pressure/' | relative_url }}" style="text-decoration: none; color: inherit;">Institute für Thermische Verfahrenstechnik</a></h3>
         <h4>Student Research Assistant</h4>
         <p>Engineered a predictive model in Python for ultra-high pressure liquid densities by bridging the Tait and Phonon Theory with fundamental molecular and thermodynamic properties. Involved rigorous data comparison against TREND EOS and parameter optimization. <a href="{{ '/projects/predicting_high_pressure/' | relative_url }}"><strong>Read the full project details &rarr;</strong></a></p>
         
@@ -53,7 +53,7 @@ subtitle: The path that shaped my expertise and vision
       <div class="timeline-dot"></div>
       <div class="timeline-date">Jun 2023 - Jul 2023</div>
       <div class="timeline-content">
-        <h3><a href="{{ '/projects/mg_nanocomposite_hydrogen/' | relative_url }}" style="text-decoration: none;">Indian Institute of Technology Bombay</a></h3>
+        <h3><a href="{{ '/projects/mg_nanocomposite_hydrogen/' | relative_url }}" style="text-decoration: none; color: inherit;">Indian Institute of Technology Bombay</a></h3>
         <h4>Research Internship</h4>
         <p>Worked to determine the synergistic effect of graphene, nickel, and MXene as a catalyst on the reaction rate kinetics such as rate constant and reaction order of Mg-based metal hydride nanocomposites for solid-state hydrogen storage using nonlinear regression. <a href="{{ '/projects/mg_nanocomposite_hydrogen/' | relative_url }}"><strong>Read the full project details &rarr;</strong></a></p>
         
