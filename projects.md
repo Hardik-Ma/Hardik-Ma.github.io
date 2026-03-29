@@ -13,7 +13,7 @@ subtitle: Built with purpose. Driven by passion.
   <div class="col-md-6 mb-4">
     <a href="#">
       <div class="project-img-wrapper">
-        <img src="{{ '/assets/img/projects/project_1.png' | relative_url }}" alt="Optimization" class="img-fluid rounded shadow-sm">
+        <img src="{{ '/assets/img/projects/Autonomous_Reactor.jpg' | relative_url }}" alt="Optimization" class="img-fluid rounded shadow-sm">
       </div>
       <h5 class="mt-2 text-dark">Autonomous Optimization of SNAr Reaction System</h5>
       <p class="text-muted small">Autonomous Multi Objective Optimization using a capillary flow reactor.</p>
@@ -103,7 +103,7 @@ subtitle: Built with purpose. Driven by passion.
   <div class="col-md-6 mb-4">
     <a href="#">
       <div class="project-img-wrapper">
-        <img src="{{ '/assets/img/projects/project_6.jpg' | relative_url }}" alt="Leaching" class="img-fluid rounded shadow-sm">
+        <img src="{{ '/assets/img/projects/E_Waste.jpg' | relative_url }}" alt="Leaching" class="img-fluid rounded shadow-sm">
       </div>
       <h5 class="mt-2 text-dark">Hydrometallurgical Leaching of PCBs</h5>
       <p class="text-muted small">Recovery of precious and heavy metals from electronics.</p>
