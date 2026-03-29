@@ -80,4 +80,14 @@ subtitle: Built with purpose. Driven by passion.
     </a>
   </div>
 
+  <div class="col-md-6 mb-4">
+    <a href="{{ '/projects/predicting_high_pressure/' | relative_url }}">
+      <div class="project-img-wrapper">
+        <img src="{{ '/assets/img/projects/Density_pred_overview.jpg' | relative_url }}" alt="Predicting High-Pressure Densities" class="img-fluid rounded shadow-sm">
+      </div>
+      <h5 class="mt-2 text-dark">Predicting High-Pressure Liquid Densities</h5>
+      <p class="text-muted small">Computational study combining equations of state for ultra-high pressures.</p>
+    </a>
+  </div>
+
 </div>
