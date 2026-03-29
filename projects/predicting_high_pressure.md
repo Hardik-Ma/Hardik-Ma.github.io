@@ -1,13 +1,13 @@
 ---
 layout: page
 title: Predicting High-Pressure Liquid Densities
-subtitle: Research Project — Hamburg University of Technology (TUHH)
+subtitle: Research Project — Technische Universität Hamburg (TUHH)
 permalink: /projects/predicting_high_pressure/
 ---
 
 # Predicting High-Pressure Liquid Densities Using the Tait Equation & Phonon Theory
 
-**Research Project — Hamburg University of Technology (TUHH)**
+**Research Project — Technische Universität Hamburg (TUHH)**
 
 A computational study combining the Tait Equation and Murnaghan's Equation to predict liquid densities at ultra-high pressures (up to the gigapascal range), where conventional equations of state break down.
 
