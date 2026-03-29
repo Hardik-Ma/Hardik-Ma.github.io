@@ -126,6 +126,24 @@ subtitle: The path that shaped my expertise and vision
       </div>
     </div>
 
+    <!-- Entry 7: Rashtriya Chemicals & Fertilizers -->
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">Apr 2021 (1 mo)</div>
+      <div class="timeline-content">
+        <h3>Rashtriya Chemicals & Fertilizers Limited</h3>
+        <h4>Internship Trainee</h4>
+        <p>Studied process and process equipment at the Suphala plant and completed a project on the manufacturing of Suphala 15:15:15 fertilizer in Mumbai, Maharashtra.</p>
+        
+        <h5>Key Skills:</h5>
+        <div class="timeline-skills">
+          <span class="skill-tag">Process Equipment</span>
+          <span class="skill-tag">Fertilizer Manufacturing</span>
+          <span class="skill-tag">Plant Operations</span>
+        </div>
+      </div>
+    </div>
+
     <!-- Add more entries as needed -->
     
   </div>
