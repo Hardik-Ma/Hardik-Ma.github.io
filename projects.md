@@ -81,6 +81,16 @@ subtitle: Built with purpose. Driven by passion.
   </div>
 
   <div class="col-md-6 mb-4">
+    <a href="{{ '/projects/hpcl_refinery_simulation/' | relative_url }}">
+      <div class="project-img-wrapper">
+        <img src="{{ '/assets/img/projects/HPCL_FCC_GCU.jpg' | relative_url }}" alt="NFCCU Operations & Amine Scrubber Simulation" class="img-fluid rounded shadow-sm">
+      </div>
+      <h5 class="mt-2 text-dark">NFCCU Operations & Amine Scrubber Simulation</h5>
+      <p class="text-muted small">Process simulation and operations study at HPCL Mumbai Refinery.</p>
+    </a>
+  </div>
+
+  <div class="col-md-6 mb-4">
     <a href="#">
       <div class="project-img-wrapper">
         <img src="{{ '/assets/img/projects/project_5.jpg' | relative_url }}" alt="Biomethanol" class="img-fluid rounded shadow-sm">
@@ -97,16 +107,6 @@ subtitle: Built with purpose. Driven by passion.
       </div>
       <h5 class="mt-2 text-dark">Hydrometallurgical Leaching of PCBs</h5>
       <p class="text-muted small">Recovery of precious and heavy metals from electronics.</p>
-    </a>
-  </div>
-
-  <div class="col-md-6 mb-4">
-    <a href="{{ '/projects/hpcl_refinery_simulation/' | relative_url }}">
-      <div class="project-img-wrapper">
-        <img src="{{ '/assets/img/projects/HPCL_FCC_GCU.jpg' | relative_url }}" alt="NFCCU Operations & Amine Scrubber Simulation" class="img-fluid rounded shadow-sm">
-      </div>
-      <h5 class="mt-2 text-dark">NFCCU Operations & Amine Scrubber Simulation</h5>
-      <p class="text-muted small">Process simulation and operations study at HPCL Mumbai Refinery.</p>
     </a>
   </div>
 
