@@ -129,7 +129,7 @@ subtitle: The path that shaped my expertise and vision
     <!-- Entry 7: Rashtriya Chemicals & Fertilizers -->
     <div class="timeline-item">
       <div class="timeline-dot"></div>
-      <div class="timeline-date">Apr 2021 (1 mo)</div>
+      <div class="timeline-date">Apr 2021</div>
       <div class="timeline-content">
         <h3>Rashtriya Chemicals & Fertilizers Limited</h3>
         <h4>Internship Trainee</h4>
