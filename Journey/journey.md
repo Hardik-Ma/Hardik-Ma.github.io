@@ -91,9 +91,9 @@ subtitle: The path that shaped my expertise and vision
       <div class="timeline-dot"></div>
       <div class="timeline-date">Jul 2022 - Aug 2022</div>
       <div class="timeline-content">
-        <h3>Hindustan Petroleum Corporation Limited</h3>
+        <h3><a href="{{ '/projects/hpcl_refinery_simulation/' | relative_url }}" style="text-decoration: none; color: inherit;">Hindustan Petroleum Corporation Limited</a></h3>
         <h4>Chemical Engineering Internship (Operations)</h4>
-        <p>Worked in the new fluidized bed catalytic cracking unit’s reactor regenerator and gained a deeper insight into troubleshooting the FGTU (Fuel Gas Treatment Unit) amine absorber.</p>
+        <p>Worked in the new fluidized bed catalytic cracking unit’s reactor regenerator and gained a deeper insight into troubleshooting the FGTU (Fuel Gas Treatment Unit) amine absorber. <a href="{{ '/projects/hpcl_refinery_simulation/' | relative_url }}"><strong>Read the full project details &rarr;</strong></a></p>
         
         <h5>Key Skills:</h5>
         <div class="timeline-skills">
