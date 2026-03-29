@@ -107,6 +107,25 @@ subtitle: The path that shaped my expertise and vision
       </div>
     </div>
 
+    <!-- Entry 6: ICT Research Internship -->
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">Jun 2022 - Jul 2022</div>
+      <div class="timeline-content">
+        <h3>Institute of Chemical Technology</h3>
+        <h4>Research Internship</h4>
+        <p>Worked on a research project funded by Hindustan Unilever to study the degradation kinetics and stabilization of hydrogen peroxide in a surfactant solution.</p>
+        
+        <h5>Key Skills:</h5>
+        <div class="timeline-skills">
+          <span class="skill-tag">HPLC</span>
+          <span class="skill-tag">GC</span>
+          <span class="skill-tag">UV-Vis Spectroscopy</span>
+          <span class="skill-tag">Krüss K-11 Tensiometer</span>
+        </div>
+      </div>
+    </div>
+
     <!-- Add more entries as needed -->
     
   </div>
