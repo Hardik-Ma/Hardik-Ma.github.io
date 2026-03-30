@@ -6,7 +6,7 @@ subtitle: Solving real-world problems through simulation and catalysis
 
 <div class="about-page-container">
   <div class="about-image-container">
-    <img src="/assets/img/me_in_woods.jpg" alt="Hardik S. Mhatre" class="about-image">
+    <img src="/assets/img/Me_lab.jpg" alt="Hardik S. Mhatre" class="about-image">
   </div>
   <div class="about-content">
     <p>Hi, I'm Hardik.</p>
