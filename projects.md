@@ -5,7 +5,7 @@ permalink: /projects/
 subtitle: Built with purpose. Driven by passion.
 ---
 
-## Academic Projects
+## Academic Projects/Industrial Projects
 <div class="mb-4"></div>
 
 <div class="row">
