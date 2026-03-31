@@ -41,12 +41,33 @@
   color: var(--text-color, #e0e0e0);
 }
 
-.testimonial-text { 
-  font-size: 1.1rem;
-  margin-bottom: 2rem;
-  line-height: 2;
+.testimonial-quote {
+  font-size: 1.15rem;
+  font-style: italic;
+  line-height: 1.6;
   text-align: left;
   color: var(--text-col);
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.testimonial-author {
+  margin-bottom: 1.5rem;
+  padding-left: 1rem;
+  border-left: 3px solid var(--hover-col);
+}
+
+.testimonial-description {
+  font-size: 0.9rem;
+  text-align: left;
+  color: var(--text-col);
+  opacity: 0.8;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+[data-theme="dark"] .testimonial-description {
+  border-top-color: rgba(255,255,255,0.1);
 }
 
 

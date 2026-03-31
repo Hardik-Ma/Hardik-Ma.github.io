@@ -10,10 +10,13 @@ document.addEventListener('DOMContentLoaded', function() {
         card.className = 'testimonial-card';
         
         card.innerHTML = `
-          <div class="testimonial-text">${testimonial.text}</div>
-          <div class="testimonial-name">${testimonial.name}</div>
-          <div class="testimonial-position">${testimonial.position}</div>
-          <div class="testimonial-company">${testimonial.company}</div>
+          <div class="testimonial-quote">"${testimonial.quote}"</div>
+          <div class="testimonial-author">
+            <div class="testimonial-name">${testimonial.name}</div>
+            <div class="testimonial-position">${testimonial.position}</div>
+            <div class="testimonial-company">${testimonial.company}</div>
+          </div>
+          <div class="testimonial-description">${testimonial.description}</div>
         `;
         
         container.appendChild(card);
