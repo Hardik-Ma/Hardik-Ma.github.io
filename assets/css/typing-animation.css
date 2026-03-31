@@ -27,6 +27,7 @@
   transform: translateY(10px);
   transition: opacity 0.5s ease, transform 0.5s ease;
   color: var(--link-col);
+  white-space: nowrap;
 }
 
 /* Visible word state */

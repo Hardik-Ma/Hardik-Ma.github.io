@@ -56,9 +56,32 @@ function initWordTransition() {
     wordContainer.appendChild(wordSpan);
   });
 
+  // Calculate the widest word and set container width
+  let maxWidth = 0;
+  wordElements.forEach(el => {
+    // Briefly make el visible to get its width
+    const originalOpacity = el.style.opacity;
+    const originalPosition = el.style.position;
+    
+    el.style.opacity = '0';
+    el.style.position = 'relative'; // relative gives true width
+    el.style.display = 'inline-block';
+    
+    const width = el.offsetWidth;
+    if (width > maxWidth) maxWidth = width;
+    
+    // Restore
+    el.style.opacity = '';
+    el.style.position = '';
+    el.style.display = '';
+  });
+  
+  if (maxWidth > 0) {
+    wordContainer.style.width = (maxWidth + 10) + 'px';
+  }
+
   // Set up the animation cycle
   let currentIndex = 0;
-  const wordElements = wordContainer.querySelectorAll('.animated-word');
 
   // Function to cycle through words
   function cycleWords() {
