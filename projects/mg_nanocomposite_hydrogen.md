@@ -31,9 +31,9 @@ Several Mg-based nanocomposites were synthesized via high-energy ball milling, i
 
 All experiments were performed using a Sievert-type volumetric apparatus under controlled conditions. Isothermal hydrogen absorption was carried out at 320 °C and 15 bar H₂ pressure. Dehydrogenation was studied both isothermally (320 °C with periodic evacuation) and non-isothermally (ramp to 450 °C under vacuum at 5 °C/min). Pressure transducer voltage data was converted to moles of H₂ absorbed/desorbed via calibration equations and the ideal gas law.
 
-<div style="display: flex; justify-content: space-around; margin: 2rem 0;">
-  <img src="{{ '/assets/img/projects/Sievert apparatus_1.jpg' | relative_url }}" alt="Sievert Apparatus 1" style="width: 45%; border-radius: 8px;">
-  <img src="{{ '/assets/img/projects/Sievert apparatus_2.jpg' | relative_url }}" alt="Sievert Apparatus 2" style="width: 45%; border-radius: 8px;">
+<div style="display: flex; flex-direction: column; align-items: center; gap: 2rem; margin: 2rem 0;">
+  <img src="{{ '/assets/img/projects/Sievert apparatus_1.jpg' | relative_url }}" alt="Sievert Apparatus 1" style="width: 90%; max-width: 600px; border-radius: 8px;">
+  <img src="{{ '/assets/img/projects/Sievert apparatus_2.jpg' | relative_url }}" alt="Sievert Apparatus 2" style="width: 90%; max-width: 600px; border-radius: 8px;">
 </div>
 
 ## Kinetic Analysis Methods
