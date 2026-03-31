@@ -57,6 +57,7 @@ function initWordTransition() {
   });
 
   // Calculate the widest word and set container width
+  const wordElements = wordContainer.querySelectorAll('.animated-word');
   let maxWidth = 0;
   wordElements.forEach(el => {
     // Briefly make el visible to get its width
