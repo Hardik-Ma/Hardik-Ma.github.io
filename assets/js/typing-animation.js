@@ -25,10 +25,10 @@ function initWordTransition() {
   if (!typingElement) return;
 
   // The base text that stays constant
-  const baseText = "I build machines that can ";
+  const baseText = "I build reactors that are ";
 
   // Words to cycle through
-  const words = ["think", "see", "learn", "adapt", "solve", "create"];
+  const words = ["smart", "robust", "adaptive", "sustainable", "carbon conscious"];
 
   // Create the HTML structure for the animation
   const staticTextSpan = document.createElement('span');
