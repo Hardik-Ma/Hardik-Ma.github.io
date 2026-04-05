@@ -1,11 +1,11 @@
 ---
 layout: page
 title: NFCCU Operations & Amine Scrubber Simulation
-subtitle: Industrial Training Internship — HPCL Mumbai Refinery
+subtitle: Industrial Training Internship HPCL Mumbai Refinery
 permalink: /projects/hpcl_refinery_simulation/
 ---
 
-# NFCCU Operations & Amine Scrubber Simulation — HPCL Mumbai Refinery
+# NFCCU Operations & Amine Scrubber Simulation HPCL Mumbai Refinery
 
 **Industrial Training Internship | July – August 2022**
 
