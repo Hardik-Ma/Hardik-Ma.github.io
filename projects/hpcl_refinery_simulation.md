@@ -7,7 +7,7 @@ permalink: /projects/hpcl_refinery_simulation/
 
 # NFCCU Operations & Amine Scrubber Simulation HPCL Mumbai Refinery
 
-**Industrial Training Internship | Duration: 2 Months (July – August 2022)**
+**Industrial Training Internship**
 
 ![HPCL FCC GCU]({{ '/assets/img/projects/HPCL_FCC_GCU.jpg' | relative_url }})
 
