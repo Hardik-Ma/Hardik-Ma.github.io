@@ -17,13 +17,13 @@ subtitle: Because just good vibes dont ship products.
             <img src="{{ '/assets/img/skills/AspenPlus icon.png' | relative_url }}" alt="Aspen Plus" class="tool-icon">Aspen Plus
           </li>
           <li class="tool-item">
-            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/comsol.svg" alt="COMSOL Multiphysics" class="tool-icon">COMSOL
+            <img src="{{ '/assets/img/skills/comsol_icon.png' | relative_url }}" alt="COMSOL Multiphysics" class="tool-icon">COMSOL
           </li>
           <li class="tool-item">
-            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/stmicroelectronics.svg" alt="DWSIM" class="tool-icon">DWSIM
+            <img src="{{ '/assets/img/skills/DWSIM_icon.png' | relative_url }}" alt="DWSIM" class="tool-icon">DWSIM
           </li>
           <li class="tool-item">
-            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/autodesk.svg" alt="AutoCAD 3D" class="tool-icon">AutoCAD 3D
+            <img src="{{ '/assets/img/skills/autocad-icon.jpg' | relative_url }}" alt="AutoCAD 3D" class="tool-icon">AutoCAD 3D
           </li>
         </ul>
       </div>
