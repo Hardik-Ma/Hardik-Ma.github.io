@@ -14,7 +14,7 @@ subtitle: Because just good vibes dont ship products.
         <p class="category-tagline">Advanced modeling and simulation of chemical and bioprocesses.</p>
         <ul class="tool-list">
           <li class="tool-item">
-            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/processwire.svg" alt="Aspen Plus" class="tool-icon">Aspen Plus
+            <img src="{{ '/assets/img/skills/AspenPlus icon.png' | relative_url }}" alt="Aspen Plus" class="tool-icon">Aspen Plus
           </li>
           <li class="tool-item">
             <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/comsol.svg" alt="COMSOL Multiphysics" class="tool-icon">COMSOL
