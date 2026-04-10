@@ -93,7 +93,7 @@ subtitle: Built with purpose. Driven by passion.
   <div class="col-md-6 mb-4">
     <a href="#">
       <div class="project-img-wrapper">
-        <img src="{{ '/assets/img/projects/project_5.jpg' | relative_url }}" alt="Biomethanol" class="img-fluid rounded shadow-sm">
+        <img src="{{ '/assets/img/products/Process_Simulation_Of_Biomethanol.jpg' | relative_url }}" alt="Biomethanol" class="img-fluid rounded shadow-sm">
       </div>
       <h5 class="mt-2 text-dark">Process Simulation of Biomethanol</h5>
       <p class="text-muted small">Simulation from lignocellulosic biomass gasification.</p>
