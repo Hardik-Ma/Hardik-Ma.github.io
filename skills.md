@@ -61,6 +61,28 @@ subtitle: Because just good vibes dont ship products.
           </li>
         </ul>
       </div>
+      <!-- Analytical Chemistry Skills Category -->
+      <div class="skill-category-card">
+        <h3 class="category-title">Analytical Chemistry Skills</h3>
+        <p class="category-tagline">Advanced instrumentation and material characterization.</p>
+        <ul class="tool-list">
+          <li class="tool-item">
+            <img src="{{ '/assets/img/skills/HPLC_icon.png' | relative_url }}" alt="HPLC" class="tool-icon">HPLC
+          </li>
+          <li class="tool-item">
+            <img src="{{ '/assets/img/skills/ftir_icon.jpg' | relative_url }}" alt="MIR Spectroscopy" class="tool-icon">MIR Spectroscopy
+          </li>
+          <li class="tool-item">
+            <img src="{{ '/assets/img/skills/ftir_icon.jpg' | relative_url }}" alt="FTIR Spectroscopy" class="tool-icon">FTIR Spectroscopy
+          </li>
+          <li class="tool-item">
+            <img src="{{ '/assets/img/skills/SEM_icon.png' | relative_url }}" alt="Scanning Electron Microscopy" class="tool-icon">Scanning Electron Microscopy
+          </li>
+          <li class="tool-item">
+            <img src="{{ '/assets/img/skills/X_Ray_diff_icon.png' | relative_url }}" alt="X ray diffraction (XRD)" class="tool-icon">X ray diffraction (XRD)
+          </li>
+        </ul>
+      </div>
     </div>
 
     <div class="skills-resume-container">
