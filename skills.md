@@ -63,7 +63,7 @@ subtitle: Because just good vibes dont ship products.
       </div>
       <!-- Analytical Chemistry Skills Category -->
       <div class="skill-category-card">
-        <h3 class="category-title">Analytical Chemistry Skills</h3>
+        <h3 class="category-title">Analytical Chemistry</h3>
         <p class="category-tagline">Advanced instrumentation and material characterization.</p>
         <ul class="tool-list">
           <li class="tool-item">
