@@ -11,13 +11,13 @@ subtitle: Solving real-world problems through simulation and catalysis
   <div class="about-content">
     <p>Hi, I'm Hardik.</p>
 
-    <p>I'm a highly motivated and passionate Chemical Engineering student with a keen interest in research to solve real-world problems by integrating chemical engineering and data science. I hold a B.E. in <em>Chemical Engineering</em> from <strong>University Of Mumbai</strong>, and I am currently pursuing an M.S. in <em>Chemical and Bioprocess Engineering</em> at <strong>Technische Universität Hamburg (TUHH)</strong>.</p>
+    <p>I work on modeling and analysis of reaction and separation systems, with a focus on sustainable chemical processes such as CO₂ utilization and hydrogen-based systems. My work combines first-principles modeling, process simulation, and experimental validation to understand and optimize complex chemical processes..</p>
 
-    <p>My academic and professional journey involves specialized coursework and projects in heterogeneous catalytic reactors, applied thermodynamics, and optimization. I work as an R&D Working Student at Tesa SE, developing and testing Acrylic and rubber based pressure-sensitive adhesives.</p>
+    <p>I am currently pursuing an M.S. in Chemical and Bioprocess Engineering at Technische Universität Hamburg, where I have worked on projects involving reactor modeling, membrane-based gas separation, and process optimization. Alongside my academic work, I am a working student in R&D at Tesa SE, where I develop and test pressure-sensitive adhesive systems and support scale-up from lab to industrial conditions.</p>
 
-    <p>I am proficient in process simulation and engineering tools like Aspen Plus, DWSIM, and COMSOL Multiphysics, alongside Python and MATLAB, which enables me to tackle complex process engineering problems.</p>
+    <p>My approach to engineering problems is driven by curiosity and iteration I enjoy working on open-ended problems, building models, testing assumptions, and refining solutions based on results.</p>
 
-    <p>This website serves as a platform to showcase my academic projects and share insights from my ongoing professional journey.</p>
+    <p>This website showcases selected projects that reflect my interest in reaction engineering, transport phenomena, and integrated modeling experimental approaches.</p>
   </div>
 </div>
 
